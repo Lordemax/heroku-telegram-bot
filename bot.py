@@ -15,6 +15,6 @@ some_api_token = os.environ['SOME_API_TOKEN']
 r = redis.from_url(os.environ.get("REDIS_URL"))
 
 #       Your bot code below
-# bot = telebot.TeleBot(token)
+# bot = telebot.TeleBot(594779131:AAGStMS5a9vcfmjjKdI9HSaxjHq4SsKhRnw)
 # some_api = some_api_lib.connect(some_api_token)
 #              ...
