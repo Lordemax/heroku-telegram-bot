@@ -7,7 +7,7 @@ import telebot
 
 # Example of your code beginning
 #           Config vars
-token = os.environ['TELEG_TOKEN']
+token = telebot.TeleBot['TELEG_TOKEN']
 #api_token = os.environ['API_TOKEN']
 #             ...
 
@@ -19,11 +19,11 @@ token = os.environ['TELEG_TOKEN']
 # some_api = some_api_lib.connect(some_api_token)
 #              ...
 
-@token.message_handler(commands=['start', 'help'])
+@bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
 	bot.reply_to(message, "Howdy, how are you doing?")
 
-@token.message_handler(func=lambda message: True)
+@bot.message_handler(func=lambda message: True)
 def echo_all(message):
 	bot.reply_to(message, message.text)
 
