@@ -7,7 +7,7 @@ import telebot
 
 # Example of your code beginning
 #           Config vars
-bot = telebot.TeleBot[TOKEN]
+bot = telebot.TeleBot['TOKEN']
 #api_token = os.environ['API_TOKEN']
 #             ...
 
