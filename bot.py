@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import redis
+#import redis
 import os
 import telebot
 # import some_api_lib
@@ -12,7 +12,7 @@ token = os.environ['TELEG_TOKEN']
 #             ...
 
 # If you use redis, install this add-on https://elements.heroku.com/addons/heroku-redis
-r = redis.from_url(os.environ.get("REDIS_URL"))
+#r = redis.from_url(os.environ.get("REDIS_URL"))
 
 #       Your bot code below
 # bot = telebot.TeleBot(594779131:AAGStMS5a9vcfmjjKdI9HSaxjHq4SsKhRnw)
